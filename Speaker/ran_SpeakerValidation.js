@@ -36,7 +36,7 @@ function validateEmailAndPhone(executionContext) {
         if (!phoneRegex.test(phone)) {
 
             formContext.ui.setFormNotification(
-                "Phone number must start with '+' and contain only numeric characters.",
+                "Phone number must start with '+' and contain only numeric character.",
                 "ERROR",
                 "PhoneValidation"
             );
