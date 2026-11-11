@@ -17,7 +17,7 @@ function validateNames(executionContext) {
     if (firstName != null && numberRegex.test(firstName))
     {
         formContext.ui.setFormNotification(
-            "First Name should not contain numbers.",
+            "First Name should not contain number.",
             "ERROR",
             "FirstNameValidation"
         );
