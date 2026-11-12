@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50FB15D0-A311-4EB5-B6AA-C853F8FECDEC}|ran.EventManagement.Plugins.csproj|c:\\users\\renu thawkar\\source\\repos\\ran.eventmanagement.plugins\\plugins\\attendeecompanyvalidationplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FB15D0-A311-4EB5-B6AA-C853F8FECDEC}|ran.EventManagement.Plugins.csproj|solutionrelative:plugins\\attendeecompanyvalidationplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FB15D0-A311-4EB5-B6AA-C853F8FECDEC}|ran.EventManagement.Plugins.csproj|c:\\users\\renu thawkar\\source\\repos\\ran.eventmanagement.plugins\\plugins\\attendeecontactvalidationplugin.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FB15D0-A311-4EB5-B6AA-C853F8FECDEC}|ran.EventManagement.Plugins.csproj|solutionrelative:plugins\\attendeecontactvalidationplugin.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FB15D0-A311-4EB5-B6AA-C853F8FECDEC}|ran.EventManagement.Plugins.csproj|C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\plugins\\attendeeduplicatevalidationplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FB15D0-A311-4EB5-B6AA-C853F8FECDEC}|ran.EventManagement.Plugins.csproj|solutionrelative:plugins\\attendeeduplicatevalidationplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FB15D0-A311-4EB5-B6AA-C853F8FECDEC}|ran.EventManagement.Plugins.csproj|C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\plugins\\speakerlinkedinduplicateplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FB15D0-A311-4EB5-B6AA-C853F8FECDEC}|ran.EventManagement.Plugins.csproj|solutionrelative:plugins\\speakerlinkedinduplicateplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50FB15D0-A311-4EB5-B6AA-C853F8FECDEC}|ran.EventManagement.Plugins.csproj|C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\plugins\\speakerduplicatevalidationplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50FB15D0-A311-4EB5-B6AA-C853F8FECDEC}|ran.EventManagement.Plugins.csproj|solutionrelative:plugins\\speakerduplicatevalidationplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AttendeeCompanyValidationPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\Plugins\\AttendeeCompanyValidationPlugin.cs",
+              "RelativeDocumentMoniker": "Plugins\\AttendeeCompanyValidationPlugin.cs",
+              "ToolTip": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\Plugins\\AttendeeCompanyValidationPlugin.cs",
+              "RelativeToolTip": "Plugins\\AttendeeCompanyValidationPlugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T05:30:14.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AttendeeContactValidationPlugin.cs.cs",
+              "DocumentMoniker": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\Plugins\\AttendeeContactValidationPlugin.cs.cs",
+              "RelativeDocumentMoniker": "Plugins\\AttendeeContactValidationPlugin.cs.cs",
+              "ToolTip": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\Plugins\\AttendeeContactValidationPlugin.cs.cs",
+              "RelativeToolTip": "Plugins\\AttendeeContactValidationPlugin.cs.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwFgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T17:53:13.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AttendeeDuplicateValidationPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\Plugins\\AttendeeDuplicateValidationPlugin.cs",
+              "RelativeDocumentMoniker": "Plugins\\AttendeeDuplicateValidationPlugin.cs",
+              "ToolTip": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\Plugins\\AttendeeDuplicateValidationPlugin.cs",
+              "RelativeToolTip": "Plugins\\AttendeeDuplicateValidationPlugin.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwIcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T12:43:13.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SpeakerDuplicateValidationPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\Plugins\\SpeakerDuplicateValidationPlugin.cs",
+              "RelativeDocumentMoniker": "Plugins\\SpeakerDuplicateValidationPlugin.cs",
+              "ToolTip": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\Plugins\\SpeakerDuplicateValidationPlugin.cs",
+              "RelativeToolTip": "Plugins\\SpeakerDuplicateValidationPlugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T09:06:43.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpeakerLinkedInDuplicatePlugin.cs",
+              "DocumentMoniker": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\Plugins\\SpeakerLinkedInDuplicatePlugin.cs",
+              "RelativeDocumentMoniker": "Plugins\\SpeakerLinkedInDuplicatePlugin.cs",
+              "ToolTip": "C:\\Users\\RENU THAWKAR\\source\\repos\\ran.EventManagement.Plugins\\Plugins\\SpeakerLinkedInDuplicatePlugin.cs",
+              "RelativeToolTip": "Plugins\\SpeakerLinkedInDuplicatePlugin.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T09:03:04.262Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

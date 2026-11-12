@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "\\ran.EventManagement.Plugins",
+    "\\ran.EventManagement.Plugins\\Constants",
+    "\\ran.EventManagement.Plugins\\obj\\Debug",
+    "\\ran.EventManagement.Plugins\\Plugins",
+    "\\ran.EventManagement.Plugins\\Plugins\\Attendee",
+    "\\ran.EventManagement.Plugins\\Plugins\\Spreaker"
+  ],
+  "PreviewInSolutionExplorer": false
+}
