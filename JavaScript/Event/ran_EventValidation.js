@@ -178,3 +178,70 @@ function validateEventDescription(executionContext) {
 
     formContext.ui.clearFormNotification("DESCRIPTION_REQUIRED");
 }
+
+
+
+
+
+
+
+async function warnNoSessionsWithin24Hours(executionContext) {
+
+    var formContext = executionContext.getFormContext();
+
+    try {
+
+        formContext.ui.clearFormNotification("NO_SESSION_WARNING");
+
+        var startDate = formContext.getAttribute("ran_startdate").getValue();
+
+        if (!startDate) {
+            return;
+        }
+
+        var eventId = formContext.data.entity.getId();
+
+        if (!eventId) {
+            return;
+        }
+
+        eventId = eventId.replace("{", "").replace("}", "");
+
+        var currentDate = new Date();
+
+        var millisecondsDifference = startDate.getTime() - currentDate.getTime();
+
+        var hoursDifference = millisecondsDifference / (1000 * 60 * 60);
+
+        // Check only when event starts within next 24 hours
+        if (hoursDifference > 24 || hoursDifference < 0) {
+            return;
+        }
+
+        var query =
+            "?$select=ran_sessionid" +
+            "&$filter=_ran_event_value eq " +
+            eventId;
+
+        var result = await Xrm.WebApi.retrieveMultipleRecords(
+            "ran_session",
+            query
+        );
+
+        if (result.entities.length === 0) {
+
+            formContext.ui.setFormNotification(
+                "Warning: Event starts within 24 hours and no Sessions are configured.",
+                "WARNING",
+                "NO_SESSION_WARNING"
+            );
+        }
+    }
+    catch (error) {
+
+        console.log(
+            "Error while checking Session records: ",
+            error.message
+        );
+    }
+}
