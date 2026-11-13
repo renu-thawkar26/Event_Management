@@ -245,3 +245,89 @@ async function warnNoSessionsWithin24Hours(executionContext) {
         );
     }
 }
+
+
+
+
+
+function switchEventBPF(executionContext) {
+
+    var formContext = executionContext.getFormContext();
+
+    var eventTypeAttr = formContext.getAttribute("ran_eventtype");
+
+    if (!eventTypeAttr) {
+        return;
+    }
+
+    var eventType = eventTypeAttr.getValue();
+
+    if (eventType === null) {
+        return;
+    }
+
+    // Public Event Process
+    var publicBpfId = "0c0bc378-a8db-f111-84e8-6045bdcebf96";
+
+    // Corporate Event Process
+    var corporateBpfId = "5a2a0837-b8db-f111-84e8-6045bdcebf96";
+
+    var activeProcess = formContext.data.process.getActiveProcess();
+
+    if (!activeProcess) {
+        return;
+    }
+
+    var currentProcessId = activeProcess.getId().toLowerCase();
+
+    // Clear previous notification
+    formContext.ui.clearFormNotification("BPF_SWITCH");
+
+    // Conference, Webinar, Workshop
+    if (
+        eventType === 100000000 ||
+        eventType === 100000001 ||
+        eventType === 100000002
+    ) {
+
+        if (currentProcessId !== publicBpfId.toLowerCase()) {
+
+            formContext.data.process.setActiveProcess(
+                publicBpfId,
+                function (result) {
+
+                    if (result === "success") {
+
+                        formContext.ui.setFormNotification(
+                            "Public Event Process has been activated based on the selected Event Type.",
+                            "INFO",
+                            "BPF_SWITCH"
+                        );
+                    }
+                }
+            );
+        }
+    }
+
+    // Corporate
+    else if (eventType === 100000003) {
+
+        if (currentProcessId !== corporateBpfId.toLowerCase()) {
+
+            formContext.data.process.setActiveProcess(
+                corporateBpfId,
+                function (result) {
+
+                    if (result === "success") {
+
+                        formContext.ui.setFormNotification(
+                            "Corporate Event Process has been activated based on the selected Event Type.",
+                            "INFO",
+                            "BPF_SWITCH"
+                        );
+                    }
+                }
+            );
+        }
+    }
+}
