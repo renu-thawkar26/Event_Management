@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\JavaScript",
+    "\\Plugin",
+    "\\Plugin\\ran.EventManagement.Plugins",
+    "\\Plugin\\ran.EventManagement.Plugins\\Plugins",
+    "\\Plugin\\ran.EventManagement.Plugins\\Plugins\\Attendee",
+    "\\Plugin\\ran.EventManagement.Plugins\\Plugins\\Event"
+  ],
+  "SelectedNode": "\\Plugin\\ran.EventManagement.Plugins\\Plugins\\Event\\EventRegistrationValidationPlugin.cs",
+  "PreviewInSolutionExplorer": false
+}
