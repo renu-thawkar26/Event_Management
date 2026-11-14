@@ -1,4 +1,4 @@
-using Microsoft.Xrm.Sdk;
+﻿using Microsoft.Xrm.Sdk;
 using System;
 
 namespace ran.EventManagement.Plugins

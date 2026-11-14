@@ -1,5 +1,6 @@
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
+using System;
 
 namespace ran.EventManagement.Plugins
 {
