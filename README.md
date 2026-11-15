@@ -4,7 +4,7 @@ The NSQ Event Management System is a Microsoft Dynamics 365 and Power Platform s
 
 This application helps organizations streamline event planning, attendee management, session scheduling, and feedback collection through an automated and user-friendly model-driven application.
 
-🚀 Project Objectives
+ Project Objectives
  > Manage complete event lifecycle
  > Schedule and organize event sessions
  > Manage speaker information
@@ -14,7 +14,7 @@ This application helps organizations streamline event planning, attendee managem
  > Implement business validations
  > Enable secure and scalable event management
 
-🛠 Technologies Used
+ Technologies Used
 Technology	Purpose
 Microsoft Dynamics 365 :	CRM Platform
 Microsoft Dataverse    :	Data Storage
@@ -25,7 +25,7 @@ Power Automate	       :  Process Automation
 Business Process Flow	 :  Guided Process
 GitHub	               :  Source Control
 
-📊 System Architecture
+ System Architecture
 Event
 │
 ├── Session
@@ -38,7 +38,7 @@ Event
     ├── Session
     └── Attendee
     
-📋 Modules
+ Modules
 * Event Management
  > Create and manage events
  > Track event status
@@ -67,7 +67,7 @@ Event
  > Collect attendee feedback
  > Store ratings and comments
 
-🔄 Business Process Flows
+ Business Process Flows
  * Public Event Process *
 1 :Event Planning
 2 :Session Setup
@@ -82,7 +82,7 @@ Event
 4 :Execution
 5 :Closure
   
-⚡ Key Implementations
+ Key Implementations
 
 > JavaScript
 Date Validations
@@ -104,12 +104,12 @@ Event Notifications
 Registration Cancellation
 Automated Status Updates
 
-👥 Team Members	
+ Team Members	
 Renu Thawkar	
 Nilay	Savant 
 Anup Bhingardive	
 
-📝 Author
+ Author
 NSQ Event Management Team
 
 Version 1.0
