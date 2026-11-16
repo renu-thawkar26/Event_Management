@@ -128,12 +128,10 @@ function validateSessionDescription(executionContext) {
 
 
 
-
 function lockSpeakerOnCompleted(executionContext) {
 
+    
     var formContext = executionContext.getFormContext();
-
-    var sessionStatusAttr = formContext.getAttribute("ran_sessionstatus");
     var speakerCtrl = formContext.getControl("ran_speaker");
 
     if (!sessionStatusAttr || !speakerCtrl) {
