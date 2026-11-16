@@ -1,5 +1,6 @@
 function validateSessionDates(executionContext) {
 
+    
     var formContext = executionContext.getFormContext();
 
     var startTimeAttr = formContext.getAttribute("ran_starttime");
