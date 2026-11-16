@@ -1,117 +1,306 @@
-* NSQ Event Management System *
-Overview:
-The NSQ Event Management System is a Microsoft Dynamics 365 and Power Platform solution developed to manage Events, Sessions, Speakers, Attendees, Event Registrations, and Feedback.
+**NSQ Event Management System**
 
-This application helps organizations streamline event planning, attendee management, session scheduling, and feedback collection through an automated and user-friendly model-driven application.
+Project Overview
+The NSQ Event Management System is a Microsoft Dynamics 365 CRM and Power Platform solution designed to manage the complete lifecycle of events, sessions, speakers, attendees, registrations, and feedback.
+The application enables organizations to plan events, schedule sessions, manage speakers and attendees, automate registrations, collect feedback, and generate insights through dashboards and reporting.
+This project was developed using:
+•	Microsoft Dataverse
+•	Model-Driven Apps
+•	JavaScript
+•	C# Plugins
+•	Power Automate
+•	Business Rules
+•	Business Process Flows (BPF)
+•	Solution Management & ALM
+•	GitHub Source Control
+The solution follows real-world Dynamics 365 development practices with validations, automation, security, reporting, deployment, and documentation. 
+________________________________________
+**Tables Implemented**
 
- Project Objectives
- > Manage complete event lifecycle
- > Schedule and organize event sessions
- > Manage speaker information
- > Register attendees for events
- > Collect attendee feedback
- > Automate notifications and approvals
- > Implement business validations
- > Enable secure and scalable event management
+**Event**
 
- Technologies Used
-Technology	Purpose
-Microsoft Dynamics 365 :	CRM Platform
-Microsoft Dataverse    :	Data Storage
-Model-Driven App	     :   User Interface
-JavaScript	           :  Client-Side Validation
-C# Plugins	           :  Server-Side Validation
-Power Automate	       :  Process Automation
-Business Process Flow	 :  Guided Process
-GitHub	               :  Source Control
+Manages event details such as Event Name, Dates, Location, Event Type, Status, and Event Code. Supports Public and Corporate Event Business Process Flows. 
 
- System Architecture
+**Session**
+
+Stores session information including Session Title, Event, Speaker, Schedule, Session Type, and Status. 
+
+**Speaker**
+
+Maintains speaker information such as Name, Email, Phone Number, Organization, Biography, and LinkedIn Profile. 
+
+**Attendee**
+
+Stores attendee details including Name, Email, Phone, Company, Job Title, and Preferred Contact Method. 
+
+**Event Registration**
+
+Handles attendee registrations for events, confirmation numbers, event dates, and registration status management. 
+
+**Feedback**
+
+Captures attendee feedback for completed sessions, including Rating, Comments, Submission Date, and Feedback Number. 
+
+________________________________________
+**Relationship Diagram**
+
+Event (1) -------- (N) Session
+
+Speaker (1) ------ (N) Session
+
+Event (1) -------- (N) Event Registration
+
+Attendee (1) ----- (N) Event Registration
+
+Session (1) ------ (N) Feedback
+
+Attendee (1) ----- (N) Feedback
+________________________________________
+**Project Flow**
+
+Create Event
+
+
+	↓
+
+Assign Business Process Flow
+
+
+	↓
+
+
+Create Session
+
+
+	↓
+
+
+Assign Speaker
+
+
+	↓
+
+
+Schedule Event
+
+
+	↓
+
+
+Register Attendees
+
+
+	↓
+	
+
+Mark Attendance
+
+
+	↓
+
+
+Collect Feedback
+
+
+	↓
+
+
+Close Event
+________________________________________
+**Team Contributions**
+
+Nilay
+
+
+Event Registration
+
+•	Event registration validations
+
+•	Registration confirmation generation
+
+•	Duplicate registration prevention
+
+•	Registration status management
+
+•	Registration-related automation and notifications
+
+
+
+Feedback
+
+•	Feedback validations
+
+•	Rating and comments handling
+
+•	Feedback submission restrictions
+
+•	Session completion validations
+
+•	Feedback-related automation
+
+________________________________________
+Renu
+
+
+Attendee
+
+•	Attendee table configuration
+
+•	Form customization
+
+•	Business validations
+
+•	JavaScript, Plugin and Business Rule implementation
+
+
+
+Speaker
+•	Speaker table configuration
+
+•	Form customization
+
+•	Validation implementation
+
+•	JavaScript, Plugin and Business Rule implementation
+
+________________________________________
+Anup
+
+
 Event
-│
-├── Session
-│   └── Speaker
-│
-├── Event Registration
-│   └── Attendee
-│
-└── Feedback
-    ├── Session
-    └── Attendee
-    
- Modules
-* Event Management
- > Create and manage events
- > Track event status
- > Manage event schedules
- > Auto-generate event codes
 
-* Session Management
- > Create sessions for events
- > Assign speakers
- > Track session status
+•	Event management functionality
 
-* Speaker Management
- > Manage speaker profiles
- > Store speaker contact information
- > Track speaker assignments
+•	Business Process Flows
 
- * Attendee Management
- > Store attendee information
- > Manage communication preferences
+•	Event validations
 
- * Registration Management
-> Register attendees for events
-> Generate confirmation numbers
+•	Event automation
 
- * Feedback Management
- > Collect attendee feedback
- > Store ratings and comments
 
- Business Process Flows
- * Public Event Process *
-1 :Event Planning
-2 :Session Setup
-3 :Registration
-4 :Event Execution
-5 :Event Closure
+Session
+•	Session scheduling
 
-* Corporate Event Process *
-1 :Proposal
-2 :Planning
-3 :Approval
-4 :Execution
-5 :Closure
-  
- Key Implementations
+•	Session validations
 
-> JavaScript
-Date Validations
-Dynamic Field Visibility
-Form Notifications
-Read-only Fields
-Client-side Business Rules
+•	Speaker assignment management
 
- > Plugins
-Duplicate Checks
-Data Validation
-Record Restrictions
-Confirmation Number Generation
-Feedback Restrictions
+•	Session automation
+________________________________________
+**Features Implemented**
 
- > Power Automate
-Registration Confirmation Email
-Event Notifications
-Registration Cancellation
-Automated Status Updates
 
- Team Members	
-Renu Thawkar	
-Nilay	Savant 
-Anup Bhingardive	
+JavaScript
 
- Author
-NSQ Event Management Team
+•	Form validations
 
-Version 1.0
+•	Dynamic field behavior
 
-Built using Microsoft Dynamics 365, Dataverse, Power Automate, Plugins, and JavaScript.
+•	Mandatory field handling
+
+•	Read-only field management
+
+•	Client-side business logic
+
+
+
+Plugins
+
+•	Server-side validations
+
+•	Data integrity enforcement
+
+•	Business rule implementation
+
+•	Restriction and verification logic
+
+
+
+Power Automate
+•	Email notifications
+
+•	Automated status updates
+
+•	Registration and session-based automation
+
+
+
+Business Rules
+
+•	Field visibility control
+
+•	Field requirements
+
+•	Form-level business conditions
+
+
+
+Business Process Flows
+
+•	Public Event Process
+
+•	Corporate Event Process
+
+
+________________________________________
+
+**Solution Components**
+
+•	Dataverse Tables
+
+•	Model-Driven Application
+
+•	Forms
+
+•	Views
+
+•	JavaScript Web Resources
+
+•	Plugin Assembly
+
+•	Plugin Steps
+
+•	Power Automate Flows
+
+•	Business Rules
+
+•	Business Process Flows
+
+•	Managed Solution Deployment
+
+________________________________________
+*Technology Stack*
+
+Technology	Purpose: Microsoft Dynamics 365	CRM Platform
+
+Microsoft Dataverse: 	Data Storage
+
+Power Apps:	Model-Driven App
+
+JavaScript:	Client-Side Validations
+
+C# Plugins:	Server-Side Validations
+
+Power Automate:	Workflow Automation
+
+GitHub:	Source Control
+
+________________________________________
+**Repository Structure**
+________________________________________
+Developed As Part Of
+
+**NSQUARE XPERTS - Event Management System Project**
+
+A hands-on Microsoft Dynamics 365 CRM and Power Platform solution implementing industry-standard practices including Dataverse customization, JavaScript development, Plugin development, Power Automate automation, Business Process Flows, ALM, Deployment, and GitHub Source Control. 
+________________________________________
+**Project Team**
+
+•	Nilay - Event Registration & Feedback
+
+•	Renu - Attendee & Speaker
+
+•	Anup - Event & Session
+
+_Built using Microsoft Dynamics 365 CRM, Dataverse, Power Platform, Plugins, JavaScript, and Power Automate._
+
